@@ -14,8 +14,8 @@
     <li class="mb-0 h-8"
     ><p class="text-xl">stand.fm inc.</p></li>
     <li class="mb-0 h-8">
-      <a class="text-xl" href="https://twitter.com/natural_clar">
-      Twitter: @natural_clar
+      <a class="text-xl" href="https://x.com/natural_clar">
+      X: @natural_clar
       </a>
     </li>
     <li class="mb-0 h-5">

@@ -18,6 +18,10 @@ src="./assets/lexical.png"
 - [Lexical](https://lexical.dev/)
 - Meta 社が開発したテキストエディタフレームワーク
 - 拡張性、汎用性、パフォーマンスに優れている
+- 2022 年注目されてたライブラリの一つ
+
+Note:
+2022 年 star 数ランキングみたいなのを知り合いと見てた
 
 ---
 
@@ -49,6 +53,7 @@ Note:
 
 - 公式が React plugin を提供
 - core ライブラリ自体は js
+- plugin を楽に追加可能
 
 ```sh
 bun install lexical @lexical/react
@@ -115,3 +120,15 @@ editor.update(() => {
   root.append(paragraphNode);
 });
 ```
+
+---
+
+### 実際に見てみよう
+
+---
+
+### 決して登壇資料が間に合わなかったではないよ
+
+---
+
+### もう一度言うけど決して登壇資料が間に合わな
