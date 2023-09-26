@@ -10,7 +10,7 @@
     class="rounded-full"
   />
   <ul style="list-style-type: none;">
-    <li ><p class="font-bold">Naturaclar</p></li>
+    <li ><p class="font-bold">Jesse Katsumata</p></li>
     <li class="mb-0 h-8"
     ><p class="text-xl">stand.fm inc.</p></li>
     <li class="mb-0 h-8">
@@ -21,6 +21,7 @@
     <li class="mb-0 h-5">
       <a class="text-xl" href="https://github.com/Naturalclar">GitHub: @Naturalclar</a>
     </li>
+
   </ul>
 </dev>
 
