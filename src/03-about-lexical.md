@@ -10,9 +10,11 @@
 
 ### Lexical とは
 
+<div class="flex justify-center">
 <img
 src="./assets/lexical.png"
 />
+</div>
 
 ---
 
