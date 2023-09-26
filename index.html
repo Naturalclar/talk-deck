@@ -3,10 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + Code Hike</title>
+    <link rel="stylesheet" href="/node_modules/reveal.js/dist/reveal.css" />
+    <link
+      rel="stylesheet"
+      href="/node_modules/reveal.js/dist/theme/white.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/node_modules/reveal.js/plugin/highlight/monokai.css"
+    />
+    <title>Lexical を使った宣言的エディタ開発</title>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <div class="reveal">
+      <div class="slides">
+        <section data-markdown="./src/hello.md"></section>
+        <section data-markdown="./src/hello.md"></section>
+      </div>
+    </div>
+    <script type="module" src="./src/main.js"></script>
   </body>
 </html>
