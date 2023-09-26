@@ -33,6 +33,7 @@ Note:
 案件でサービス内で使う WYSIWYG エディタを開発していた時の話
 特定のライブラリには触れない
 エディタは Event ベースで処理を行うことが多いので、「このイベントが起きた時これが発生する。」というのを把握していかないといけない
+太字にするなどの書体変更に DOM 操作が行われていた。span タグを挿入したりなど。
 
 ---
 
@@ -46,8 +47,71 @@ Note:
 
 #### Lexical の特徴
 
-- React
+- 公式が React plugin を提供
 - core ライブラリ自体は js
+
+```sh
+bun install lexical @lexical/react
+```
 
 Note:
 core ライブラリ自体は js なので React 以外のフレームワークとも併用して使えます。
+
+---
+
+#### Lexical Node
+
+```ts
+// 簡略化した型
+
+type RootNode {
+  children: ParagraphNode[]
+}
+
+type ParagraphNode {
+  children: TextNode[]
+}
+
+type TextNode {
+  value: string
+  format: Format[]
+}
+
+type Format = 'bold' | 'italic' | 'underline'
+
+```
+
+---
+
+#### Lexical での操作
+
+```js
+import {
+  $getRoot,
+  $getSelection,
+  $createParagraphNode,
+  $createTextNode,
+} from "lexical";
+
+// `editor.update` 関数の中で $ から始まるヘルパー関数を呼び出して操作します。
+// editor.update の外でこれらの関数を使おうとするとエラーになります
+editor.update(() => {
+  // EditorState の RootNode を取得
+  const root = $getRoot();
+
+  // 現在選択中の Node を取得
+  const selection = $getSelection();
+
+  // ParagraphNode を新しく作成
+  const paragraphNode = $createParagraphNode();
+
+  // TextNode を新しく作成
+  const textNode = $createTextNode("Hello world");
+
+  // ParagraphNode に TextNode を追記
+  paragraphNode.append(textNode);
+
+  // RootNode に ParagraphNode を追記
+  root.append(paragraphNode);
+});
+```
