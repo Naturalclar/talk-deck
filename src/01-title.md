@@ -3,3 +3,5 @@
 [WeJS #42](https://wajs.connpass.com/event/293440/)
 
 [@natural_clar](https://twitter.com/natural_clar)
+
+Note: Test

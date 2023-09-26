@@ -24,6 +24,11 @@
   </ul>
 </dev>
 
+Note:
+株式会社 stand.fm でエンジニアしてます。
+音声配信アプリを React Native で開発しています。
+React Native の OSS 活動してます
+
 ---
 
 <img

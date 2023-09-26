@@ -6,6 +6,6 @@ import Highlight from "reveal.js/plugin/highlight/highlight.esm.js";
 let deck = new Reveal({
   plugins: [Markdown, Highlight, Notes],
   history: true,
-  showNotes: true,
+  showNotes: false,
 });
 deck.initialize();
