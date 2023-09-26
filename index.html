@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind CSS end -->
+
+    <!-- Reveal CSS -->
     <link rel="stylesheet" href="/node_modules/reveal.js/dist/reveal.css" />
     <link
       rel="stylesheet"
@@ -12,13 +17,32 @@
       rel="stylesheet"
       href="/node_modules/reveal.js/plugin/highlight/monokai.css"
     />
+    <!-- Reveal CSS end-->
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fonts End -->
+
     <title>Lexical を使った宣言的エディタ開発</title>
+
+    <!-- Styles -->
+    <style>
+      code td {
+        font-family: "JetBrains Mono", monospace;
+      }
+    </style>
+    <!-- Styles End -->
   </head>
   <body>
     <div class="reveal">
       <div class="slides">
-        <section data-markdown="./src/hello.md"></section>
-        <section data-markdown="./src/hello.md"></section>
+        <section data-markdown="./src/01-title.md"></section>
+        <section data-markdown="./src/02-intro.md"></section>
       </div>
     </div>
     <script type="module" src="./src/main.js"></script>
